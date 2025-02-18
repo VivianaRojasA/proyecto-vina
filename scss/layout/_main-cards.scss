@@ -1,0 +1,18 @@
+
+.seccion-card{
+    @include flex-col;
+    .indexNovedades{
+        @include padd-izq-der;
+    }
+}
+.items{
+    .titulo-product{
+        display: flex;
+        justify-content: space-between;
+        @include padd-izq-der;
+            select{
+                border-color: $lila;
+                border-radius: .3125rem;
+            }
+    }
+}

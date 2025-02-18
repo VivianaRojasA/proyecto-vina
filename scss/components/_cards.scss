@@ -1,0 +1,22 @@
+.cards{
+    @include flex-card;
+    article{
+        background-color: rgb(240, 240, 240);
+        width: 20vw;
+        border-radius: 5px;
+        img{
+            width: 20vw;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        h3{
+            font-size: 95%;
+            text-align: center;
+            padding-top: 5%;
+        }
+        p{
+            font-size: 95%;
+            padding: 0 5%;
+        }
+    }
+}

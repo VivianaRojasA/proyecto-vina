@@ -1,0 +1,22 @@
+@mixin flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1vw;
+}
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+@mixin padd-izq-der{
+    padding: 0 3%;
+}
+@mixin titulo-fondo{
+    width: 100vw;
+    height: 10vh;
+    background-color: $terciario;
+    text-align: center;
+    align-content: center;
+}

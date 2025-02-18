@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .main-content{
+        flex: 1;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    /*position: sticky;*/
+    h4{
+        font-size: .9375rem;
+        text-align: center;
+        padding-top: .625rem;
+    }
+    article{
+        display: flex;
+        justify-content: center;
+        a{
+            img{
+                padding: .625rem;
+                width: 3.5rem;
+            }
+        }
+    }
+}

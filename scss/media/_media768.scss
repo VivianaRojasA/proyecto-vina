@@ -1,0 +1,34 @@
+@media(max-width:768px){
+    .banner{
+        h1{
+            font-size: map-get($fuente-size768, titulo-principal);
+        }
+    }
+    .cards{
+        article{
+            margin-bottom: .625rem;
+            width: 35vw;
+            img{
+                width: 35vw;
+            }
+            h3{
+                font-size: 100%;
+            }
+            p{
+                font-size: 95%;
+                padding: 0 7%;
+            }
+        }
+    }
+    .main-login{
+        .box-login{
+            width: 60vw;
+            padding: 60px;
+            .loginForm{
+                input{
+                    width: 50vw;
+                }
+            }
+        }
+    }
+}

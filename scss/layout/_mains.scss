@@ -1,0 +1,96 @@
+.titulo-about, .titulo-contact{
+    @include titulo-fondo;
+}
+.aboutUno, .aboutDos{
+    @include padd-izq-der;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: #4a3885;
+    margin-bottom: 1.25rem;
+    .aboutRight1, .aboutLeft2{
+        p{
+            text-align:end;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.descripcion-form{
+    text-align: center;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    @include padd-izq-der;
+    label{
+        margin-bottom: 0.2rem;
+    }
+    input{
+    all: unset;
+    width: 90vw;
+    height: auto;
+    padding: 4px;
+    border: 1px solid $lila;
+    border-radius: .3125rem;
+    margin-bottom: 1.25rem;
+    }
+    .contactMensaje{
+        @extend input;
+        height: 12.5rem;
+    }
+    .contactEnviar{
+        @extend input;
+        background-color: $terciario;
+        border: 1px solid black;
+        width: 5rem;
+        text-align: center;
+    }
+}
+
+.main-login{
+    display: flex;
+    justify-content: center;
+    .box-login{
+        margin-bottom: 16px;
+        width: 500px;
+        height: auto;
+        padding: 16px;
+        background-color: $terciario;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        .loginForm{
+            input{
+                all: unset;
+                width: 400px;
+                height: auto;
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: .3125rem;
+                background-color: white;
+                margin-bottom: 1.25rem;
+            }
+            .loginEnviar{
+                @extend input;
+                color: $secondary;
+                width: 60px;
+                text-align: center;
+                
+            }
+        }
+    }
+        .botones-login{
+            button{
+                background: none;
+                border: none;
+                color: #334C23;
+                font-size: 1rem;
+                text-decoration:underline;
+                padding-bottom: 16px;
+            }
+        }
+}

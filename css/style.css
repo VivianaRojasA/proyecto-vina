@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Josefin Sans", serif;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: "Josefin Sans", serif;
+  font-size: 24px;
+}
+
+body {
+  font-family: "DM Sans", serif;
+  color: #4A3885;
+}
+body header p {
+  text-align: center;
+}
+body header h3 {
+  font-family: "Josefin Sans", serif;
+  color: #4A3885;
+}
+
+.seccion-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.seccion-card .indexNovedades {
+  padding: 0 3%;
+}
+
+.items .titulo-product {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+.items .titulo-product select {
+  border-color: #9E91C7;
+  border-radius: 0.3125rem;
+}
+
+.titulo-about, .titulo-contact {
+  width: 100vw;
+  height: 10vh;
+  background-color: #DFD2F4;
+  text-align: center;
+  align-content: center;
+}
+
+.aboutUno, .aboutDos {
+  padding: 0 3%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  color: #4a3885;
+  margin-bottom: 1.25rem;
+}
+.aboutUno .aboutRight1 p, .aboutUno .aboutLeft2 p, .aboutDos .aboutRight1 p, .aboutDos .aboutLeft2 p {
+  text-align: end;
+}
+.aboutUno .aboutRight1 img, .aboutUno .aboutLeft2 img, .aboutDos .aboutRight1 img, .aboutDos .aboutLeft2 img {
+  width: 100%;
+}
+
+.descripcion-form {
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3%;
+}
+.contactForm label {
+  margin-bottom: 0.2rem;
+}
+.contactForm input, .contactForm .main-login .box-login .loginForm .loginEnviar, .main-login .box-login .loginForm .contactForm .loginEnviar, .contactForm .contactEnviar, .contactForm .contactMensaje {
+  all: unset;
+  width: 90vw;
+  height: auto;
+  padding: 4px;
+  border: 1px solid #9E91C7;
+  border-radius: 0.3125rem;
+  margin-bottom: 1.25rem;
+}
+.contactForm .contactMensaje {
+  height: 12.5rem;
+}
+.contactForm .contactEnviar {
+  background-color: #DFD2F4;
+  border: 1px solid black;
+  width: 5rem;
+  text-align: center;
+}
+
+.main-login {
+  display: flex;
+  justify-content: center;
+}
+.main-login .box-login {
+  margin-bottom: 16px;
+  width: 500px;
+  height: auto;
+  padding: 16px;
+  background-color: #DFD2F4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+.main-login .box-login .loginForm input, .main-login .box-login .loginForm .loginEnviar, .main-login .box-login .loginForm .contactForm .contactMensaje, .contactForm .main-login .box-login .loginForm .contactMensaje, .main-login .box-login .loginForm .contactForm .contactEnviar, .contactForm .main-login .box-login .loginForm .contactEnviar {
+  all: unset;
+  width: 400px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 0.3125rem;
+  background-color: white;
+  margin-bottom: 1.25rem;
+}
+.main-login .box-login .loginForm .loginEnviar {
+  color: #4A3885;
+  width: 60px;
+  text-align: center;
+}
+.main-login .botones-login button {
+  background: none;
+  border: none;
+  color: #334C23;
+  font-size: 1rem;
+  text-decoration: underline;
+  padding-bottom: 16px;
+}
+
+.primary {
+  background-color: #F8FAC9;
+}
+
+.infoHeader {
+  font-size: 0.75rem;
+}
+
+.navbar {
+  padding: 0 3%;
+  /*position: sticky;
+  top: 1rem;
+  z-index: 1000;*/
+  margin-bottom: 1rem;
+}
+.navbar .contenedor .navbar-brand {
+  /*img{
+
+  }*/
+}
+.navbar .contenedor .navbar-brand h3 {
+  font-size: 80%;
+}
+.navbar ul li a {
+  color: #4A3885;
+}
+.navbar ul li a:hover {
+  color: #3e7d17;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .main-content {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8FAC9;
+  /*position: sticky;*/
+}
+footer h4 {
+  font-size: 0.9375rem;
+  text-align: center;
+  padding-top: 0.625rem;
+}
+footer article {
+  display: flex;
+  justify-content: center;
+}
+footer article a img {
+  padding: 0.625rem;
+  width: 3.5rem;
+}
+
+.banner {
+  width: 98.98w;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+}
+.banner img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  /*object-fit:cover;*/
+  order: 1;
+}
+.banner h1 {
+  color: white;
+  text-shadow: 0.1875rem 0 0 #9E91C7, -0.1875rem 0 0 #9E91C7, 0 0.1875rem 0 #9E91C7, 0 -0.1875rem 0 #9E91C7;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: center;
+  align-content: center;
+  /*object-fit: cover;*/
+  font-size: 40px;
+  text-align: center;
+  order: 2;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1vw;
+}
+.cards article {
+  background-color: rgb(240, 240, 240);
+  width: 20vw;
+  border-radius: 5px;
+}
+.cards article img {
+  width: 20vw;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cards article h3 {
+  font-size: 95%;
+  text-align: center;
+  padding-top: 5%;
+}
+.cards article p {
+  font-size: 95%;
+  padding: 0 5%;
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 30px;
+  }
+  .cards article {
+    margin-bottom: 0.625rem;
+    width: 35vw;
+  }
+  .cards article img {
+    width: 35vw;
+  }
+  .cards article h3 {
+    font-size: 100%;
+  }
+  .cards article p {
+    font-size: 95%;
+    padding: 0 7%;
+  }
+  .main-login .box-login {
+    width: 60vw;
+    padding: 60px;
+  }
+  .main-login .box-login .loginForm input, .main-login .box-login .loginForm .contactForm .contactMensaje, .contactForm .main-login .box-login .loginForm .contactMensaje, .main-login .box-login .loginForm .contactForm .contactEnviar, .contactForm .main-login .box-login .loginForm .contactEnviar, .main-login .box-login .loginForm .loginEnviar {
+    width: 50vw;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+  }
+  h2 {
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+  }
+  .banner h1 {
+    font-size: 24px;
+  }
+  .cards article {
+    margin-bottom: 0.625rem;
+    width: 70vw;
+  }
+  .cards article img {
+    width: 70vw;
+  }
+  .titulo-about, .titulo-contact {
+    margin-bottom: 16px;
+  }
+  .aboutUno, .aboutDos {
+    flex-direction: column;
+  }
+  .aboutUno .aboutLeft1 p, .aboutDos .aboutLeft1 p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .aboutUno .aboutLeft2, .aboutDos .aboutLeft2 {
+    order: 2;
+  }
+  .aboutUno .aboutRight2, .aboutDos .aboutRight2 {
+    text-align: center;
+    order: 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .descripcion-form {
+    padding: 0 3%;
+  }
+  .contactForm label {
+    margin-bottom: 0.125rem;
+  }
+  .contactForm input, .contactForm .contactMensaje, .contactForm .contactEnviar, .contactForm .main-login .box-login .loginForm .loginEnviar, .main-login .box-login .loginForm .contactForm .loginEnviar {
+    margin-bottom: 0.625rem;
+  }
+  .main-login .box-login {
+    width: 90vw;
+    padding: 16px;
+  }
+  .main-login .box-login .loginForm input, .main-login .box-login .loginForm .contactForm .contactMensaje, .contactForm .main-login .box-login .loginForm .contactMensaje, .main-login .box-login .loginForm .contactForm .contactEnviar, .contactForm .main-login .box-login .loginForm .contactEnviar, .main-login .box-login .loginForm .loginEnviar {
+    width: 80vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

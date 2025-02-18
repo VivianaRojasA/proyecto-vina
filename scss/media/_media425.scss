@@ -1,0 +1,67 @@
+@media(max-width:425px){
+    h1{
+        font-family: $font-title;
+        font-size: map-get($fuente-size425, titulo1 );
+    }
+    h2{
+        font-family: $font-title;
+        font-size: map-get($fuente-size425 , titulo2 );
+    }
+    .banner{
+        h1{
+            font-size: map-get($fuente-size425, titulo-principal);
+        }
+    }
+    .cards{
+        article{
+            margin-bottom: .625rem;
+            width: 70vw;
+            img{
+                width: 70vw;
+            }
+        }
+    }
+    .titulo-about, .titulo-contact{
+        margin-bottom: 16px;
+    }
+    .aboutUno, .aboutDos{
+        flex-direction: column;
+        .aboutLeft1{
+            p{
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+        .aboutLeft2{
+            order: 2;
+        }
+        .aboutRight2{
+            text-align: center;
+            order: 1;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+    .descripcion-form{
+        @include padd-izq-der;
+    }
+    .contactForm{
+        label{
+            margin-bottom: .125rem;
+        }
+        input{
+        margin-bottom: .625rem;
+        }
+    }
+    .main-login{
+        .box-login{
+            width: 90vw;
+            padding: 16px;
+            .loginForm{
+                input{
+                    width: 80vw;
+                }
+            }
+        }
+    }
+}

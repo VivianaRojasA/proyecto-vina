@@ -127,6 +127,9 @@ body header h3 {
   background-color: white;
   margin-bottom: 1.25rem;
 }
+.main-login .box-login .loginForm input:hover, .main-login .box-login .loginForm .loginEnviar:hover, .main-login .box-login .loginForm .contactForm .contactMensaje:hover, .contactForm .main-login .box-login .loginForm .contactMensaje:hover, .main-login .box-login .loginForm .contactForm .contactEnviar:hover, .contactForm .main-login .box-login .loginForm .contactEnviar:hover {
+  background-color: #F8FAC9;
+}
 .main-login .box-login .loginForm .loginEnviar {
   color: #4A3885;
   width: 60px;
@@ -139,6 +142,10 @@ body header h3 {
   font-size: 1rem;
   text-decoration: underline;
   padding-bottom: 16px;
+}
+
+input:focus, .contactForm .contactMensaje:focus, .contactForm .contactEnviar:focus, .main-login .box-login .loginForm .loginEnviar:focus {
+  background-color: #F8FAC9;
 }
 
 .primary {

@@ -73,6 +73,7 @@
                 border-radius: .3125rem;
                 background-color: white;
                 margin-bottom: 1.25rem;
+                &:hover{background-color: $primary}
             }
             .loginEnviar{
                 @extend input;
@@ -93,4 +94,9 @@
                 padding-bottom: 16px;
             }
         }
+}
+input{
+    &:focus{
+        background-color: $primary;
+    }
 }

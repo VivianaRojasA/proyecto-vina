@@ -21,7 +21,7 @@
             }
         }
     }
-    .titulo-about, .titulo-contact{
+    .titulo-about{
         margin-bottom: 16px;
     }
     .aboutUno, .aboutDos{
@@ -42,17 +42,40 @@
             padding-bottom: 0;
         }
     }
-    .descripcion-form{
-        @include padd-izq-der;
-    }
-    .contactForm{
-        label{
-            margin-bottom: .125rem;
+    .main-contact{
+        background-size: 150vh;
+        background-position: center;
+        .banner-contact{
+            margin-left: 2%;
+            .titulo-contact{
+                margin:0;
+                padding: 16px 0 10px 0;
+                height: auto;
+            }
+            .descripcion-form{
+                @include padd-izq-der;
+            }
         }
-        input{
-        margin-bottom: .625rem;
+        display: flex;
+        flex-direction: column;
+        .contactForm{
+            align-self: center;
+            width: 95vw;
+            margin: 0;
+            label{
+                margin-bottom: .125rem;
+                
+            }
+            input{
+            margin-bottom: .625rem;
+            width: 90vw;
+            }
+            .contactMensaje{
+                height: 100px;
+            }
         }
     }
+    
     .main-login{
         .box-login{
             width: 90vw;

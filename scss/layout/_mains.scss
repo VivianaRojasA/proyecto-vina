@@ -17,19 +17,39 @@
         }
     }
 }
-.descripcion-form{
-    text-align: center;
+.banner-contact{
+    margin-bottom: 1rem;
+    .titulo-contact{
+        background: none; 
+    }
+    .descripcion-form{
+        background-color: rgba(255, 255, 255, 0.678);
+        display: inline;
+        margin-left: 1%;
+        
+    }
+}
+.main-contact{
+    background-image: url('../assets/img/contacto-libretas.jpeg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding-bottom: 1%;
 }
 .contactForm{
     display: flex;
     flex-direction: column;
-    @include padd-izq-der;
+    padding-left: 1%;
+    padding-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: .3125rem;
+    width: 55vw;
+    margin-left: 1%;
     label{
-        margin-bottom: 0.2rem;
+        padding-bottom: 0.2rem;
     }
     input{
     all: unset;
-    width: 90vw;
+    width: 50vw;
     height: auto;
     padding: 4px;
     border: 1px solid $lila;
@@ -53,7 +73,7 @@
     display: flex;
     justify-content: center;
     .box-login{
-        margin-bottom: 16px;
+        margin: 16px 0;
         width: 500px;
         height: auto;
         padding: 16px;
